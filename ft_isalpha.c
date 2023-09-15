@@ -11,5 +11,5 @@ int ft_isalpha(int c)
 
 /*int main(void)
 {
-    printf("%d", ft_is_alpha('y'));
+    printf("%d", ft_is_alpha('o'));
 }*/
