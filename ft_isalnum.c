@@ -9,9 +9,9 @@ int ft_isalnum(int c)
         return(0);
 }
 
-/*int main(void)
+int main(void)
 {
     printf("%d", ft_isalnum('e'));
     printf("\n%d", ft_isalnum('2'));
     printf("\n%d", ft_isalnum(','));
-}*/
+}

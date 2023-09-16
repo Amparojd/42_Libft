@@ -8,8 +8,8 @@ int ft_isascii(int c)
         return(0);
 }
 
-/*int main(void)
+int main(void)
 {
     printf("%d", ft_isascii('â'));
     printf("\n%d", ft_isascii('a'));
-}*/
+}

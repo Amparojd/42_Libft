@@ -2,12 +2,12 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	i;
-	size_t	j;
+	size_t	i; //iterador para dst
+	size_t	j; //iterador para src
 
 	i = 0;
 	j = 0;
-	if (dstsize == 0 && (!dst || !src))
+	if (dstsize == 0 && (!dst || !src)) 
 		return (0);
 	while (dst[i] && i < dstsize)
 		i++;
@@ -21,9 +21,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (i + ft_strlen(src));
 }
 
-/*int	main(void)
+int	main(void)
 {
 	char	dst[] = "buenos días";
 	char	src[] = "buenas";
 	printf("%zu", ft_strlcat(dst, src, 30));
-}*/
+}

@@ -25,10 +25,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (i);
 }
 
-/*int	main(void)
+int	main(void)
 {
 	char	dst[] = "buenos dias";
 	char	src[] = "bubulhhhhjkhdiqwudiuqgdiu";
 
 	printf("%zu", ft_strlcpy(dst, src, 15));
-}*/
+}

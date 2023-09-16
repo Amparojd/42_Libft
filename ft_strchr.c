@@ -14,7 +14,7 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-/*int	main(void)
+int	main(void)
 {
 	char	s[] = "buenosw";
 	char	x[] = "buenos";
@@ -24,4 +24,4 @@ char	*ft_strchr(const char *s, int c)
 	printf("%s", ft_strchr(s, c));
 	printf("\n%s", ft_strchr(x, c));
 	return (0);
-}*/
+}

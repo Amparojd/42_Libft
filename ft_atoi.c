@@ -30,11 +30,11 @@ int	ft_atoi(const char *str)
 	return (res * neg);
 }
 
-/*int	main(void)
+int	main(void)
 {
 	char	str[] = "  -12345c abc";
 	char str2[] = " -9223372036854775809";
 
 	printf("%d", ft_atoi(str));
 	printf("\n%d", ft_atoi(str2));
-}*/
+}

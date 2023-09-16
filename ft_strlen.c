@@ -11,7 +11,7 @@ size_t ft_strlen(const char *str)
 }
 
 
-/*int main(void)
+int main(void)
 {
     printf("%zu", ft_strlen("hola"));
-}*/
+}

@@ -24,11 +24,11 @@ char	*ft_strrchr(const char *s, int c)
 	return (0);
 }
 
-/*int main(void)
+int main(void)
 {
     char s[] = "hola que tal";
 
     int x = 'q';
 
     printf("%s", ft_strrchr(s, x));
-}*/
+}

@@ -7,11 +7,11 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-/*int	main(void)
+int	main(void)
 {
 	char	c;
 
 	c = 'a';
 	printf("%c", ft_toupper(c));
 	return (0);
-}*/
+}

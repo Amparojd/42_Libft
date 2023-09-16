@@ -1,9 +1,5 @@
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -26,9 +22,9 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 }
 
-/*int main(void)
+ int main(void)
 {
     int n = 23;
 
     ft_putnbr_fd(n, 1);
-}*/
+}
