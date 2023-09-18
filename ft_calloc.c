@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 15:49:21 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/09/16 17:34:02 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/09/16 19:54:49 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_calloc(size_t nitems, size_t size)
 	return (buffer);
 }
 
-int main()
+/*int main()
 {
 	
 	char *a = ft_calloc(5, sizeof(char));
@@ -36,4 +36,4 @@ int main()
 	printf("%s", a);
 	while(*a)
 		(write(1, a, 1), a++);
-}
+}*/

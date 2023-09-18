@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/16 15:41:48 by ampjimen          #+#    #+#             */
+/*   Updated: 2023/09/16 20:13:13 by ampjimen         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
@@ -14,7 +26,7 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	s[] = "buenosw";
 	char	x[] = "buenos";
@@ -24,4 +36,4 @@ int	main(void)
 	printf("%s", ft_strchr(s, c));
 	printf("\n%s", ft_strchr(x, c));
 	return (0);
-}
+}*/

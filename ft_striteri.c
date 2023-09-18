@@ -1,40 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/16 15:41:48 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/09/16 20:10:23 by ampjimen         ###   ########.fr       */
+/*   Created: 2023/09/18 17:25:49 by ampjimen          #+#    #+#             */
+/*   Updated: 2023/09/18 19:42:11 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	size_t	i;
-	char	*str1;
-	char	*str2;
+	int	i;
 
 	i = 0;
-	str1 = (char *)dst;
-	str2 = (char *)src;
-	if (src == NULL && dst == NULL)
-		return (NULL);
-	while (i < n)
+	if (!s || !f)
+		return ;
+	while (s[i])
 	{
-		str1[i] = str2[i];
+		f(i, &s[i]);
 		i++;
 	}
-	return (dst);
 }
 
-/*int	main(void)
+/*void mifunction(unsigned int i, char *str)
 {
-	char	dst[] = "siempre dice";
-	char	src[] = "nunca";
+	(void) i;
+	printf("%s", str);
+}
 
-	printf("%s", ft_memcpy(dst, src, 5));
+int		main(void)
+{
+	char	*str= "hola";
+
+		ft_striteri(str, mifunction);
+		//write(1, str, 11);
+	
+	return (0);
 }*/

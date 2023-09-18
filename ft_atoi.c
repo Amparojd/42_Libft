@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/16 19:50:37 by ampjimen          #+#    #+#             */
+/*   Updated: 2023/09/18 18:49:59 by ampjimen         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include	"libft.h"
+#include "libft.h"
+#include <limits.h>
 
 int	ft_atoi(const char *str)
 {
@@ -21,20 +33,21 @@ int	ft_atoi(const char *str)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		res = (str[i] - 48) + (res * 10);
-		if (res > 9223372036854775808UL && neg == -1)//9223372036854775808 es 2 elevado a la 63a potencia (2^63) que es el valor máximo de un long
+		if (res > (unsigned long)LONG_MAX && neg == -1)
 			return (0);
-		if (res > 9223372036854775808UL && neg == 1)
+		if (res > (unsigned long)LONG_MAX && neg == 1)
 			return (-1);
 		i++;
 	}
 	return (res * neg);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	str[] = "  -12345c abc";
-	char str2[] = " -9223372036854775809";
+	char str2[] = " 9223372045654645645645636854775809";
 
 	printf("%d", ft_atoi(str));
 	printf("\n%d", ft_atoi(str2));
-}
+	printf("\n%d", atoi(str2));
+}*/

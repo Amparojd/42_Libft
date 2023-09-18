@@ -1,40 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/16 15:41:48 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/09/16 20:10:23 by ampjimen         ###   ########.fr       */
+/*   Created: 2023/09/18 16:52:31 by ampjimen          #+#    #+#             */
+/*   Updated: 2023/09/18 19:38:03 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
-{
-	size_t	i;
-	char	*str1;
-	char	*str2;
-
-	i = 0;
-	str1 = (char *)dst;
-	str2 = (char *)src;
-	if (src == NULL && dst == NULL)
-		return (NULL);
-	while (i < n)
+void	ft_putendl_fd(char *s, int fd)
+{	
+	while (*s)
 	{
-		str1[i] = str2[i];
-		i++;
+		ft_putchar_fd(*s, fd);
+		s++;
 	}
-	return (dst);
+	write(fd, "\n", 1);
 }
 
-/*int	main(void)
+/*int main(void)
 {
-	char	dst[] = "siempre dice";
-	char	src[] = "nunca";
-
-	printf("%s", ft_memcpy(dst, src, 5));
+    char *s = "hola";
+    ft_putendl_fd(s, 1);
 }*/

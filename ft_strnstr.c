@@ -1,28 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/18 17:25:49 by ampjimen          #+#    #+#             */
+/*   Updated: 2023/09/18 18:44:38 by ampjimen         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
-
-size_t ft_strlen(const char *str)
-{
-    size_t  i;
-
-    i = 0;
-    while(str[i] != '\0')
-        i++;
-    return(i);
-}
-
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
-{
-	size_t	i;
-
-	i = 0;
-	while (i < n && (s1[i] || s2[i]))
-	{
-		if (s1[i] != s2[i])
-			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
-		i++;
-	}
-	return (0);
-}
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -40,11 +28,11 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	haystack[] = "hola que tal";
 	char	needle[] = "que";
 
 	printf("%s", ft_strnstr(haystack, needle, 17));
 	return (0);
-}
+}*/

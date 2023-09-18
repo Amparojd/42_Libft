@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/18 17:25:49 by ampjimen          #+#    #+#             */
+/*   Updated: 2023/09/18 18:47:14 by ampjimen         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_tolower(int c)
@@ -7,11 +19,11 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	c;
 
 	c = 'A';
 	printf("%c", ft_tolower(c));
 	return (0);
-}
+}*/

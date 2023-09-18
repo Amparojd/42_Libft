@@ -1,5 +1,16 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/16 15:41:48 by ampjimen          #+#    #+#             */
+/*   Updated: 2023/09/16 20:12:34 by ampjimen         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -22,9 +33,9 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 }
 
- int main(void)
+/*int main(void)
 {
     int n = 23;
 
     ft_putnbr_fd(n, 1);
-}
+}*/

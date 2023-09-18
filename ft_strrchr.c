@@ -1,14 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/18 17:25:49 by ampjimen          #+#    #+#             */
+/*   Updated: 2023/09/18 18:46:55 by ampjimen         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
-
-size_t ft_strlen(const char *str)
-{
-    size_t  i;
-
-    i = 0;
-    while(str[i] != '\0')
-        i++;
-    return(i);
-}
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -24,11 +26,11 @@ char	*ft_strrchr(const char *s, int c)
 	return (0);
 }
 
-int main(void)
+/*int main(void)
 {
     char s[] = "hola que tal";
 
     int x = 'q';
 
     printf("%s", ft_strrchr(s, x));
-}
+}*/
