@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 15:41:48 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/09/25 19:31:29 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/09/25 19:53:00 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ char	**ft_split(char const *s, char c)
 }
 
 
-int	main(void)
+/*int	main(void)
 {
 	char	str[] = "hola como estas tu";
 	char	**word_split;
@@ -103,4 +103,4 @@ int	main(void)
 	printf("%s\n", word_split[2]);
 	printf("%s\n", word_split[3]);
 	return (0);
-}
+}*/
