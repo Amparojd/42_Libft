@@ -1,38 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 15:43:09 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/02 17:19:11 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/02 17:29:17 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Añade el nodo ’new’ al principio de la lista ’lst’. */
+/* Toma como parámetro un nodo ’lst’ y libera la
+memoria del contenido utilizando la función ’del’
+dada como parámetro, además de liberar el nodo. La
+memoria de ’next’ no debe liberarse. */
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	new->next = *lst;
-	*lst = new;
+	del(lst->content);
+	free(lst);
 }
-/*int main(void)
-{
-	t_list list1;
-	list1.next = 0;
-	list1.content = "HOLA 1";
-	t_list list2;
-	list2.content = "HOLA 1sdfdf";
-	list2.next = 0;
-	
-	t_list *tmp = &list1;
-	ft_lstadd_front(&tmp, &list2);
-
-	while(tmp)
-	{
-		printf("%s\n", tmp->content);
-		tmp = tmp->next;
-	}
-}*/

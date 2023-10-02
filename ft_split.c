@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 15:41:48 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/09/25 19:53:00 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/09/26 14:19:54 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,6 @@ char	**ft_split(char const *s, char c)
 	strlist[i] = NULL;
 	return (strlist);
 }
-
 
 /*int	main(void)
 {

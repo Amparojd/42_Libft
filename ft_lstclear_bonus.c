@@ -1,38 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 15:43:09 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/02 17:19:11 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/02 17:50:39 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Añade el nodo ’new’ al principio de la lista ’lst’. */
+/* Elimina y libera el nodo ’lst’ dado y todos los
+consecutivos de ese nodo, utilizando la función
+’del’ y free(3).
+Al final, el puntero a la lista debe ser NULL. */
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	new->next = *lst;
-	*lst = new;
-}
-/*int main(void)
-{
-	t_list list1;
-	list1.next = 0;
-	list1.content = "HOLA 1";
-	t_list list2;
-	list2.content = "HOLA 1sdfdf";
-	list2.next = 0;
+	t_list	*tmp;
 	
-	t_list *tmp = &list1;
-	ft_lstadd_front(&tmp, &list2);
-
-	while(tmp)
+	if (lst)
 	{
-		printf("%s\n", tmp->content);
-		tmp = tmp->next;
+		while (*lst)
+		{
+			tmp = (*lst)->next;
+			ft_lstdelone(*lst, del);
+			(*lst) = tmp;
+		}
 	}
-}*/
+}
