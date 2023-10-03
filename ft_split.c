@@ -6,12 +6,11 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 15:41:48 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/09/26 14:19:54 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:49:27 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 static size_t	ft_wordcount(char const *s, char c)
 {
@@ -22,7 +21,7 @@ static size_t	ft_wordcount(char const *s, char c)
 	listsize = 0;
 	while (s[i] != '\0')
 	{
-		if ((i == 0 && s[i] != c) 
+		if ((i == 0 && s[i] != c)
 			|| (s[i] == c && s[i + 1] != '\0' && s[i + 1] != c))
 			listsize++;
 		i++;

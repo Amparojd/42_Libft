@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 15:43:09 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/02 17:20:25 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:48:51 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (size);
 }
-
-

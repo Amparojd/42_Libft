@@ -6,13 +6,13 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 17:25:49 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/09/19 18:45:20 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:50:06 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start,size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*target;
 	size_t	len_s;
@@ -30,9 +30,9 @@ char	*ft_substr(char const *s, unsigned int start,size_t len)
 	return (target);
 }
 
-int main(void)
+/*int main(void)
 {
 	char s[] = "hola";
 	
 	printf("%s", ft_substr(s, 2, 20));
-}
+}*/

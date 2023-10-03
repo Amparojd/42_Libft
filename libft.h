@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 17:02:59 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/02 17:07:07 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:50:27 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 typedef struct s_list
 {
 	void			*content;
-	struct s_list 	*next;
+	struct s_list	*next;
 }	t_list;
 
 int			ft_isalpha(int c);

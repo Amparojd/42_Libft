@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 15:43:09 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/02 17:50:39 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:45:45 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Al final, el puntero a la lista debe ser NULL. */
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*tmp;
-	
+
 	if (lst)
 	{
 		while (*lst)

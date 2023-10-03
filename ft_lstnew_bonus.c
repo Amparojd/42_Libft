@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 15:43:09 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/02 17:18:33 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:48:24 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,10 @@ t_list	*ft_lstnew(void *content)
 	return (element);
 }
 
-void a()
+/*void a()
 {
     system("leaks a.out");
 }
-
 int main()
 {
     atexit(a);
@@ -53,4 +52,4 @@ int main()
     printf("%s\n", milista->content);
     free(milista);
     free(milista2);
-}
+}*/

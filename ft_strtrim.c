@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 17:25:49 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/09/23 13:17:44 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:49:43 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, (end - start + 1)));
 }
-
 /*int	main(void)
 {
 	char const	*str = "halal";
@@ -36,4 +35,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	printf("%s", ft_strtrim(str, str2));
 	return (0);
 }*/
-

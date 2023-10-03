@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 15:43:09 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/02 17:52:39 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:46:01 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@ contenido de cada nodo. */
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
-

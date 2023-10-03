@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 15:41:48 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/09/26 17:19:13 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/03 17:46:47 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static unsigned int	ft_numlen(int num)
 char	*ft_itoa(int n)
 {
 	char			*str;
-	unsigned int	num; 
+	unsigned int	num;
 	unsigned int	len;
 
 	len = ft_numlen(n);
