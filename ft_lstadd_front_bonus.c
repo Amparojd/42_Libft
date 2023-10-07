@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 15:43:09 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/02 17:19:11 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/05 17:27:18 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	t_list list1;
 	list1.next = 0;
 	list1.content = "HOLA 1";
+
+	
 	t_list list2;
 	list2.content = "HOLA 1sdfdf";
 	list2.next = 0;

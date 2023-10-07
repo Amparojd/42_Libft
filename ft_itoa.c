@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 15:41:48 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/03 17:46:47 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/05 16:48:08 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,10 +58,11 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-/*int	main(void)
-{
-	int	n = 22;
-
-	printf("%s", ft_itoa(n));
-	return (0);
-}*/
+// int	main(void)
+// {
+// 	int	n = 22;
+// 	char *ret = ft_itoa(n);
+// 	printf("%s", ret);
+// 	free(ret);
+// 	return (0);
+// }

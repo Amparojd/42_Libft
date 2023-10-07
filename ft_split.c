@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 15:41:48 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/03 17:49:27 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/05 17:04:55 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,9 +90,9 @@ char	**ft_split(char const *s, char c)
 	return (strlist);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
-	char	str[] = "hola como estas tu";
+	char	str[] = "hola como       estas tu     ";
 	char	**word_split;
 	char	c = ' ';
 	word_split = ft_split(str, c);
@@ -101,4 +101,4 @@ char	**ft_split(char const *s, char c)
 	printf("%s\n", word_split[2]);
 	printf("%s\n", word_split[3]);
 	return (0);
-}*/
+} */

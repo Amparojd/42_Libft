@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 17:25:49 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/09/23 12:00:44 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/05 17:05:52 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	res = malloc(ft_strlen(s1) + ft_strlen(s2) + 1 * sizeof(char));
+	res = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
 	while (s1[i])
