@@ -35,7 +35,7 @@ bonus: $(OBJS_BONUS)
 
 $(OBJ_DIR)%.o: $(SRCS_DIR)%.c
 	@mkdir -p $(@D)
-	@$(GCC) $(CFLAGS) -c $< -o $@ 
+	@$(GCC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_DIR):
 	@mkdir -p $(OBJ_DIR)
